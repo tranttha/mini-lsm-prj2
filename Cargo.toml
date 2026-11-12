@@ -1,0 +1,28 @@
+[package]
+name = "mini-lsm-starter"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.97.1"
+publish = false
+
+[dependencies]
+anyhow = "1"
+arc-swap = "1"
+bytes = "1"
+crossbeam-epoch = "0.9"
+crossbeam-skiplist = "0.1"
+parking_lot = "0.12"
+ouroboros = "0.18"
+moka = { version = "0.12", features = ["sync"] }
+clap = { version = "4", features = ["derive"] }
+rand = "0.10"
+crossbeam-channel = "0.5"
+serde_json = { version = "1" }
+serde = { version = "1", features = ["derive"] }
+farmhash = "1"
+nom = "8"
+rustyline = "18"
+
+[dev-dependencies]
+tempfile = "3"
+crc32fast = "1"
